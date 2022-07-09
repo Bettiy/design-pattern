@@ -9,10 +9,10 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        Dog[] a = {new Dog(1), new Dog(5), new Dog(3)};
+        Dog[] dogs = {new Dog(1), new Dog(5), new Dog(3)};
         Sorter<Dog> sorter = new Sorter<>();
-        sorter.sort(a, new DogComparator());
-        System.out.println(Arrays.toString(a));
+        sorter.sort(dogs, new DogComparator());
+        System.out.println(Arrays.toString(dogs));
     }
 
 }

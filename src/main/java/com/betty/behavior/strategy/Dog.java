@@ -1,17 +1,19 @@
 package com.betty.behavior.strategy;
 
-import lombok.AllArgsConstructor;
 import lombok.ToString;
 
 /**
  * @author ys
  * @date 2022/07/03
  */
-@AllArgsConstructor
 @ToString
 public class Dog implements Comparable<Dog> {
 
     int food;
+
+    public Dog(int food) {
+        this.food = food;
+    }
 
     @Override
     public int compareTo(Dog o) {
